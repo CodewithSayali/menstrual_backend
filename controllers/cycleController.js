@@ -11,7 +11,7 @@ async function getNextPeriodAndPhase(userId) {
     const currentPhase = determineCurrentPhase(nextPeriod, cycleData.cycleLength);
 
     return { nextPeriod, currentPhase };
-  } catch (error) {
+  } catch (error ) {
     throw new Error("Error retrieving cycle data");
   }
 }
